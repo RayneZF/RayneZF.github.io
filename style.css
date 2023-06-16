@@ -1,13 +1,166 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+#header{
+    border : 0px;
+    width : 100%;
+    border-spacing: 0; 
+    border-collapse: collapse;  
+    background-color: lightgray;
 }
-  
+
+#navigation {
+    border : 0px;
+    border-spacing: 15px; 
+    border-collapse: collapse;
+    width : 90%;
+    align-items: center;
+}
+
+#navigation td {
+    padding: 0;
+}
+
 h1 {
-    color: #333;
+    font-family: "Comic sans MS";
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 80px;
 }
+
+a {
+    font-family: "Verdana";
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    width: 100%;
+    background-color: black;
+}
+
+.about-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.about-content h2 {
+    font-family: Verdana;
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.about-content hr {
+    width: 90%;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-description {
+    width: 60%;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-description p {
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+#projects {
+    border: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+  }
   
-p {
-    color: #666;
-}
+  #projects table {
+    border: 0;
+    width: 80%;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  
+  #projects table tr td {
+    height: 180px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  #projects h1 {
+    font-family: Verdana;
+    font-size: 36px;
+    color: #4CAF50;
+    padding-right: 75px;
+  }
+  
+  #projects hr {
+    width: 90%;
+  }
+  
+  #projects ul {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: #4CAF50;
+    list-style-type: none;
+  }
+  
+  #projects ul li {
+    margin-top: 10px;
+  }
+  
+  #projects ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+  }
+  
+  #contact {
+    border: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #c2c0c3;
+  }
+  
+  #contact tr td {
+    height: 180px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  #contact h1 {
+    font-family: Verdana;
+    font-size: 36px;
+    color: black;
+    padding-right: 100px;
+  }
+
+  #contact h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: whitesmoke;
+    list-style-type: none;
+  }
+
+  #contact hr {
+    width: 90%;
+  }
+  
+  
