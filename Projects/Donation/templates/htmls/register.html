@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}Form Register!{% endblock title %}
+
+{% block register %}
+<body style="background-color:skyblue;"></body>
+<div class="contraner">
+    <h1>Please Register!</h1>
+
+    
+    <form action="{{ url_for('register') }}" method="post">
+        <div class="row">
+            <div class="title">
+                <label for="firstname">Firstname</label>
+            </div>
+            <div class="table">
+                <input type="text" name="username" placeholder="firstname" autocomplete="off" required autofocus>
+            </div>
+            <div class="title">
+                <label for="lastname">Lastname</label>
+            </div>
+            <div class="table">
+                <input type="text" name="username" placeholder="lastname" autocomplete="off" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="title">
+                <label for="email">Email</label>
+            </div>
+            <div class="table">
+                <input type="email" name="email" placeholder="email" autocomplete="off" required>
+            </div>
+            <div class="title">
+                <label for="pass">Password</label>
+            </div>
+            <div class="table">
+                <input type="password" name="password" placeholder="Password(8 characters minimum)" autocomplete="off" minlength="8" required>
+            </div>
+        </div>
+        <input type="submit" name="" value="Sign in">
+    </form>
+</div>
+{% endblock register %}

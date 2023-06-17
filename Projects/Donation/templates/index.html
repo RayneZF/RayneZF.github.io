@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block title %}Project With Flask{% endblock %}
+
+{% block hero %}
+<section class="hero">
+    <div class="hero-content">
+        <h2>Donate Now!</h2>
+        <h3>Help people affected by disasters.</h3>
+        <div class="hero-form">
+            <form>
+                <input type="number" min="100" max="1000" step="100"name="" value="" placeholder="Amount">
+                <input type="submit" name="" value="Donate!">
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock hero %}
+
+{% block about %}
+<section class="about">
+    <div class="about-content">
+        <div class="about-content-item about-card">
+            <img src="static/img/victim.jpg" alt="victim image">
+        </div>
+        <div class="about-content-item about-text">
+            <h2>More About Our Organisation</h2>
+            <p>
+                Call Center    : 0871 4459 9866                           
+                Business Email : Hurrindation@gmail.com                         
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock about %}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth and Moon</title>
+    <style>
+        body {
+            height: 1000px;
+            background-image: linear-gradient(purple, pink, darkblue, black);
+            margin: 50px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin: 50px;
+        }
+
+        .circle {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            border-radius: 75px;
+            margin-top: 200px;
+        }
+
+        .circle2 {
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+            border-radius: 50px;
+            position: absolute;
+            animation: revolution 1s infinite linear;
+            animation-direction: normal;
+            margin-bottom: 150px;
+        }
+
+        @keyframes revolution{
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            10% {
+                transform: translate(150px, 70px);
+            }
+
+            
+            20% {
+                transform: translate(180px, 160px);
+            }
+
+            30% {
+                transform: translate(180px, 250px);
+            }
+
+            40% {
+                transform: translate(-10px, 340px);
+            }
+
+            50% {
+                transform: translate(-100px, 320px);
+            }
+
+            60% {
+                transform: translate(-140px, 220px);
+            }
+
+            70% {
+                transform: translate(-160px, 190px);
+            }
+
+            80% {
+                transform: translate(-150px, 160px);
+            }
+
+            90% {
+                transform: translate(-130px, 100px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+            
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+    </div>
+</body>
+</html>
